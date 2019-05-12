@@ -35,6 +35,7 @@ class Welcome extends CI_Controller {
 		// $studentid = isset($_GET['studentid'])?$_GET['studentid']:""
 		$nameActivity = isset($_POST['nameActivity'])?$_POST['activityName']:"";
 		$details = isset($_POST['details'])?$_POST['details']:"";
+		$school_year = isset($_POST['school_year'])?$_POST['school_year']:"";
 		$start_date = isset($_POST['start_date'])?$_POST['startDate']:"";
 		$final_date = isset($_POST['final_date'])?$_POST['finalDate']:"";
 		$start_time = isset($_POST['start_time'])?$_POST['startTime']:"";
@@ -44,7 +45,7 @@ class Welcome extends CI_Controller {
 		$responsible = isset($_POST['responsible'])?$_POST['responsible']:"";
 		// $pass = isset($_GET['password'])?$_GET['password']:"";
 		$this->load->model('activity');
-		$result = $this->activity->create($nameActivity, $details, $start_date, $final_date, $start_time, $final_time, $year, $term, $responsible);
+		$result = $this->activity->create($nameActivity, $details, $school_year, $start_date, $final_date, $start_time, $final_time, $year, $term, $responsible);
 		if($result){
 			if($result){
 				echo "<script>alert('บันทึกสำเร็จ');
@@ -66,6 +67,7 @@ class Welcome extends CI_Controller {
 		// $studentid = isset($_GET['studentid'])?$_GET['studentid']:""
 		$nameActivity = isset($_POST['nameActivity'])?$_POST['activityName']:"";
 		$details = isset($_POST['details'])?$_POST['details']:"";
+		$school_year = isset($_POST['school_year'])?$_POST['school_year']:"";
 		$start_date = isset($_POST['start_date'])?$_POST['startDate']:"";
 		$final_date = isset($_POST['final_date'])?$_POST['finalDate']:"";
 		$start_time = isset($_POST['start_time'])?$_POST['startTime']:"";
@@ -75,7 +77,7 @@ class Welcome extends CI_Controller {
 		$responsible = isset($_POST['responsible'])?$_POST['responsible']:"";
 		// $pass = isset($_GET['password'])?$_GET['password']:"";
 		$this->load->model('activity');
-		$result = $this->activity->update($nameActivity, $details, $start_date, $final_date, $start_time, $final_time, $year, $term, $responsible);
+		$result = $this->activity->update($nameActivity, $details, $school_year, $start_date, $final_date, $start_time, $final_time, $year, $term, $responsible);
 		if($result){
 			if($result){
 				echo "<script>alert('บันทึกสำเร็จ');
