@@ -6,7 +6,8 @@ class Activity extends CI_Model
         $data = array(
             'activityID' => $id_activity,
             'activityName' => $nameActivity,
-            'day' => $day,
+            'startDate' => $start_date,
+            'finalDate' => $final_date,
             'time' => $time,
             'year' => $year,
             'term' => $term,
