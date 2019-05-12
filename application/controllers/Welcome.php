@@ -42,10 +42,10 @@ class Welcome extends CI_Controller {
 		$final_time = isset($_POST['final_time'])?$_POST['final_time']:"";
 		$year = isset($_POST['year'])?$_POST['year']:"";
 		$term = isset($_POST['term'])?$_POST['term']:"";
-		$responsible = isset($_POST['responsible'])?$_POST['responsible']:"";
+
 		// $pass = isset($_GET['password'])?$_GET['password']:"";
 		$this->load->model('activity');
-		$result = $this->activity->create($nameActivity, $details, $school_year, $start_date, $final_date, $start_time, $final_time, $year, $term, $responsible);
+		$result = $this->activity->create($nameActivity, $details, $school_year, $start_date, $final_date, $start_time, $final_time, $year, $term);
 		if($result){
 			if($result){
 				echo "<script>alert('บันทึกสำเร็จ');
@@ -74,10 +74,10 @@ class Welcome extends CI_Controller {
 		$final_time = isset($_POST['final_time'])?$_POST['final_time']:"";
 		$year = isset($_POST['year'])?$_POST['year']:"";
 		$term = isset($_POST['term'])?$_POST['term']:"";
-		$responsible = isset($_POST['responsible'])?$_POST['responsible']:"";
+
 		// $pass = isset($_GET['password'])?$_GET['password']:"";
 		$this->load->model('activity');
-		$result = $this->activity->update($nameActivity, $details, $school_year, $start_date, $final_date, $start_time, $final_time, $year, $term, $responsible);
+		$result = $this->activity->update($nameActivity, $details, $school_year, $start_date, $final_date, $start_time, $final_time, $year, $term);
 		if($result){
 			if($result){
 				echo "<script>alert('บันทึกสำเร็จ');

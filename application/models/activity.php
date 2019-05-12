@@ -1,7 +1,7 @@
 <?php
 class Activity extends CI_Model
 {
-    public function create($nameActivity, $details, $school_year, $start_date, $final_date, $start_time, $final_time, $year, $term, $responsible)
+    public function create($nameActivity, $details, $school_year, $start_date, $final_date, $start_time, $final_time, $year, $term)
     {
         $data = array(
             'id_activity' => null,
@@ -14,7 +14,6 @@ class Activity extends CI_Model
             'final_time' => $final_time,
             'year' => $year,
             'term' => $term,
-            'responsible' => $responsible,
             'status' => 1,
         
         );
@@ -22,7 +21,7 @@ class Activity extends CI_Model
         return ($this->db->affected_rows() != 1) ? false : true;
     }
 
-    public function update($nameActivity, $details, $school_year, $start_date, $final_date, $start_time, $final_time, $year, $term, $responsible)
+    public function update($nameActivity, $details, $school_year, $start_date, $final_date, $start_time, $final_time, $year, $term)
     {
         $data = array(
             'id_activity' => null,
@@ -35,7 +34,6 @@ class Activity extends CI_Model
             'final_time' => $final_time,
             'year' => $year,
             'term' => $term,
-            'responsible' => $responsible,
             'status' => 1,
         
         );
