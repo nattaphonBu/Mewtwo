@@ -32,57 +32,73 @@
         </span>
       </div>
     </nav>
-    <h1>สร้างกิจกรรม</h1>
-    <form action="<?php echo base_url('Welcome/insert') ?>" method="get">
-<div class="form-group">
-  <label for="usr">ชื่อกิจกรรม</label>
-  <input type="text" class="form-control col-5" id="nameActivity">
-</div>
-<div class="form-group">
-  <label for="usr">รายละเอียดกิจกรรม</label>
-  <input type="text" class="form-control col-5" id="detail">
-</div>
-<div class="form-group">
-  <label for="usr">วันที่เริ่มกิจกรรม</label>
-  <input type="date" id="start_date" name="start"
-       min="2019-05" value="2018-05">
-</div>
-<div class="form-group">
-  <label for="usr">วันสิ้นสุดกิจกรรม</label>
-  <input type="date" id="final_date" name="start"
-       min="2019-05" value="2018-05">
-</div>
-<div class="form-group">
-  <label for="usr">เวลาที่เริ่ม</label>
-  <input type="time" class="form-control col-3" id="time">
-  <label for="usr">เวลาที่เริ่ม</label>
-  <input type="time" class="form-control col-3" id="time">
+    <h1></h1>
+
+
+    <br>
+<div class="container">
+  <!-- <h2>Card titles, text, and links</h2> -->
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title" align="center">สร้างกิจกรรม</h4>
+      <form action="<?php echo base_url('Welcome/insert') ?>" method="get">
+        <div class="form-group">
+          <label for="usr">ชื่อกิจกรรม</label>
+          <input type="text" class="form-control col-5" id="nameActivity" name="nameActivity">
+        </div>
+        <div class="form-group">
+          <label for="usr">รายละเอียดกิจกรรม</label>
+          <input type="text" class="form-control col-5" id="details" name="details">
+        </div>
+        <div class="form-group">
+          <label for="usr">วันที่เริ่มกิจกรรม</label>
+          <input type="date" id="start_date" name="start_date"
+              min="2019-05" value="2018-05">
+        </div>
+        <div class="form-group">
+          <label for="usr">วันสิ้นสุดกิจกรรม</label>
+          <input type="date" id="final_date" name="final_date"
+              min="2019-05" value="2018-05">
+        </div>
+        <div class="form-group">
+          <label for="usr">เวลาที่เริ่ม</label>
+          <input type="time" class="form-control col-3" id="start_time" name="start_time">
+          <label for="usr">เวลาที่เริ่ม</label>
+          <input type="time" class="form-control col-3" id="final_time" name="final_time">
+        </div>
+
+        <div class="form-group">
+          <label for="year">ปีการศึกษา</label>
+          <input type="text" class="form-control col-5" id="school_year"  name="school_year">
+        </div>
+
+        <div class="form-group">
+          <label for="term">เทอม</label>
+          <select class="form-control col-2" id="term" name="term">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+      
+        <div class="form-group">
+          <label for="term" name="year">ชั้นปีที่เข้ารวม</label>
+        <label class="checkbox-inline" id="year" name="year" ><input type="checkbox" value="">ปี 1</label>
+        <label class="checkbox-inline" id="year" name="year"><input type="checkbox" value="">ปี 2</label>
+        <label class="checkbox-inline" id="year" name="year"><input type="checkbox" value="">ปี 3</label>
+        <label class="checkbox-inline" id="year" name="year"><input type="checkbox" value="">ปี 4</label>
+        <label class="checkbox-inline" id="year" name="year"><input type="checkbox" value="">ปี 5</label>
+        <label class="checkbox-inline" id="year" name="year"><input type="checkbox" value="">ปี 6</label>
+        <label class="checkbox-inline" id="year" name="year"><input type="checkbox" value="">ปี 7</label>
+        <label class="checkbox-inline" id="year" name="year"><input type="checkbox" value="">ปี 8</label>
+        </div>
+
+
+        
+        <button type="submit" class="btn btn-primary btn-md col-5">บันทึก</button>
+        </form>
+    </div>
+  </div>
 </div>
 
-<div class="form-group">
-  <label for="year">ชั้นปี</label>
-  <select class="form-control col-5" id="year">
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-	<option>4</option>
-	<option>5</option>
-	<option>6</option>
-	<option>7</option>
-	<option>8</option>
-  </select>
-</div>
-<div class="form-group">
-  <label for="term">เทอม</label>
-  <select class="form-control col-5" id="sel1">
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-  </select>
-</div>
-<div class="form-group">
-  <label for="responsible">ชื่อผู้รับผิดชอบ</label>
-  <input type="text" class="form-control col-5" id="usr">
-</div>
-<button type="submit" class="btn btn-primary btn-md col-5">บันทึก</button>
-</form>
+  
