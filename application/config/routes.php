@@ -54,5 +54,5 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['Welcome/create'] = 'create_activity';
 $route['Welcome/edit'] = 'eidt_activity';
-$route['editactivity'] = 'editactivity';
-$route['cancelactivity'] = 'cancelactivity';
+// $route['editactivity'] = 'editactivity';
+// $route['cancelactivity'] = 'cancelactivity';
