@@ -4,8 +4,8 @@ class Activity extends CI_Model
     public function create($nameActivity, $details, $school_year, $start_date, $final_date, $start_time, $final_time, $year, $term, $responsible);
     {
         $data = array(
-            'activityID' => null,
-            'activityName' => $nameActivity,
+            'id_activity' => null,
+            'nameActivity' => $nameActivity,
             'details' => $details,
             'school_year' => $school_year,
             'startDate' => $start_date,
@@ -25,8 +25,8 @@ class Activity extends CI_Model
     public function update($nameActivity, $details, $school_year, $start_date, $final_date, $start_time, $final_time, $year, $term, $responsible);
     {
         $data = array(
-            'activityID' => null,
-            'activityName' => $nameActivity,
+            'id_activity' => null,
+            'nameActivity' => $nameActivity,
             'details' => $details,
             'school_year' => $school_year,
             'startDate' => $start_date,

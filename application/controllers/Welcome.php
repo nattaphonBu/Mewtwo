@@ -33,7 +33,7 @@ class Welcome extends CI_Controller {
 
 	public function insert(){
 		// $studentid = isset($_GET['studentid'])?$_GET['studentid']:""
-		$nameActivity = isset($_POST['nameActivity'])?$_POST['activityName']:"";
+		$nameActivity = isset($_POST['nameActivity'])?$_POST['nameActivity']:"";
 		$details = isset($_POST['details'])?$_POST['details']:"";
 		$school_year = isset($_POST['school_year'])?$_POST['school_year']:"";
 		$start_date = isset($_POST['start_date'])?$_POST['startDate']:"";
@@ -65,7 +65,7 @@ class Welcome extends CI_Controller {
 
 	public function update(){
 		// $studentid = isset($_GET['studentid'])?$_GET['studentid']:""
-		$nameActivity = isset($_POST['nameActivity'])?$_POST['activityName']:"";
+		$nameActivity = isset($_POST['nameActivity'])?$_POST['nameActivity']:"";
 		$details = isset($_POST['details'])?$_POST['details']:"";
 		$school_year = isset($_POST['school_year'])?$_POST['school_year']:"";
 		$start_date = isset($_POST['start_date'])?$_POST['startDate']:"";
