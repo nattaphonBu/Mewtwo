@@ -26,5 +26,37 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('create_activity');
 	}
+	public function edit()
+	{
+		$this->load->view('edit_activity');
+	}
 
+	public function insert(){
+		// $studentid = isset($_GET['studentid'])?$_GET['studentid']:"";
+		$studentid  = isset($_POST['studentid'])?$_POST['studentid']:"";
+		$coursename = isset($_POST['coursename'])?$_POST['coursename']:"";
+		$name = isset($_POST['name'])?$_POST['name']:"";
+		$courseid = isset($_POST['courseid'])?$_POST['courseid']:"";
+		$year = isset($_POST['year'])?$_POST['year']:"";
+		$term = isset($_POST['term'])?$_POST['term']:"";
+		$grade = isset($_POST['grade'])?$_POST['grade']:"";
+		// $pass = isset($_GET['password'])?$_GET['password']:"";
+		$this->load->model('UserModel');
+		$result = $this->UserModel->insert($studentid, $coursename,$name,  $courseid, $year, $term, $grade);
+		if($result){
+			if($result){
+				echo "<script>alert('บันทึกสำเร็จ');
+					window.location.href='getdata';
+					</script>";
+					$this->load->view('showdata');
+			}else{
+				echo "<script>alert('บันทึกไม่สำเร็จ');
+					window.location.href='getdata';
+					</script>";
+					$this->load->view('student');
+			}
+			
+			
+		}
+	}
 }
