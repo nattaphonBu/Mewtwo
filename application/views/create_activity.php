@@ -32,19 +32,28 @@
         </span>
       </div>
     </nav>
-    <form method="post" action="<form action="" method="get">> 
+    <h1>สร้างกิจกรรม</h1>
+    <form method="post" action="<form action="" method="get">
 <div class="form-group">
   <label for="usr">ชื่อกิจกรรม</label>
   <input type="text" class="form-control col-5" id="nameActivity">
 </div>
 <div class="form-group">
-  <label for="usr">วัน</label>
-  <input type="date" id="day" name="start"
-       min="2019-05" value="2018-05">
-        
+  <label for="usr">รายละเอียดกิจกรรม</label>
+  <input type="text" class="form-control col-5" id="detail">
 </div>
 <div class="form-group">
-  <label for="usr">เวลา</label>
+  <label for="usr">วันที่เริ่มกิจกรรม</label>
+  <input type="date" id="start_date" name="start"
+       min="2019-05" value="2018-05">
+</div>
+<div class="form-group">
+  <label for="usr">วันสิ้นสุดกิจกรรม</label>
+  <input type="date" id="final_date" name="start"
+       min="2019-05" value="2018-05">
+</div>
+<div class="form-group">
+  <label for="usr">เวลาที่เริ่ม</label>
   <input type="time" class="form-control col-5" id="time">
 </div>
 <div class="form-group">

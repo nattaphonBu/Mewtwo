@@ -32,7 +32,7 @@ class Welcome extends CI_Controller {
 	}
 
 	public function insert(){
-		// $studentid = isset($_GET['studentid'])?$_GET['studentid']:"";
+		
 		$studentid  = isset($_POST['studentid'])?$_POST['studentid']:"";
 		$coursename = isset($_POST['coursename'])?$_POST['coursename']:"";
 		$name = isset($_POST['name'])?$_POST['name']:"";
@@ -42,7 +42,7 @@ class Welcome extends CI_Controller {
 		$grade = isset($_POST['grade'])?$_POST['grade']:"";
 		// $pass = isset($_GET['password'])?$_GET['password']:"";
 		$this->load->model('UserModel');
-		$result = $this->UserModel->insert($studentid, $coursename,$name,  $courseid, $year, $term, $grade);
+		$result = $this->Activity->insert($studentid, $coursename,$name,  $courseid, $year, $term, $grade);
 		if($result){
 			if($result){
 				echo "<script>alert('บันทึกสำเร็จ');
