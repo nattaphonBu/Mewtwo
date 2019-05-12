@@ -54,8 +54,11 @@
 </div>
 <div class="form-group">
   <label for="usr">เวลาที่เริ่ม</label>
-  <input type="time" class="form-control col-5" id="time">
+  <input type="time" class="form-control col-3" id="time">
+  <label for="usr">เวลาที่เริ่ม</label>
+  <input type="time" class="form-control col-3" id="time">
 </div>
+
 <div class="form-group">
   <label for="year">ชั้นปี</label>
   <select class="form-control col-5" id="year">
