@@ -41,7 +41,7 @@
   <div class="card">
     <div class="card-body">
       <h4 class="card-title" align="center">สร้างกิจกรรม</h4>
-      <form action="<?php echo base_url('Welcome/insert') ?>" method="get">
+      <form action="<?php echo base_url('Welcome/insert') ?>" method="POST">
         <div class="form-group">
           <label for="usr">ชื่อกิจกรรม</label>
           <input type="text" class="form-control col-5" id="nameActivity" name="nameActivity">
@@ -83,14 +83,14 @@
       
         <div class="form-group">
           <label for="term" name="year">ชั้นปีที่เข้ารวม</label>
-        <label class="checkbox-inline" id="year" name="year" ><input type="checkbox" value="">ปี 1</label>
-        <label class="checkbox-inline" id="year" name="year"><input type="checkbox" value="">ปี 2</label>
-        <label class="checkbox-inline" id="year" name="year"><input type="checkbox" value="">ปี 3</label>
-        <label class="checkbox-inline" id="year" name="year"><input type="checkbox" value="">ปี 4</label>
-        <label class="checkbox-inline" id="year" name="year"><input type="checkbox" value="">ปี 5</label>
-        <label class="checkbox-inline" id="year" name="year"><input type="checkbox" value="">ปี 6</label>
-        <label class="checkbox-inline" id="year" name="year"><input type="checkbox" value="">ปี 7</label>
-        <label class="checkbox-inline" id="year" name="year"><input type="checkbox" value="">ปี 8</label>
+        <label class="checkbox-inline"  ><input type="checkbox" name="year[]" value="1" >ปี 1</label>
+        <label class="checkbox-inline" ><input type="checkbox" name="year[]" value="2">ปี 2</label>
+        <label class="checkbox-inline" ><input type="checkbox" name="year[]" value="3">ปี 3</label>
+        <label class="checkbox-inline" ><input type="checkbox" name="year[]" value="4">ปี 4</label>
+        <label class="checkbox-inline" ><input type="checkbox" name="year[]" value="5">ปี 5</label>
+        <label class="checkbox-inline" ><input type="checkbox" name="year[]" value="6">ปี 6</label>
+        <label class="checkbox-inline" ><input type="checkbox" name="year[]" value="7">ปี 7</label>
+        <label class="checkbox-inline" ><input type="checkbox" name="year[]" value="8">ปี 8</label>
         </div>
 
 

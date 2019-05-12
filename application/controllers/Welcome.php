@@ -42,6 +42,12 @@ class Welcome extends CI_Controller {
 		$final_time = isset($_POST['final_time'])?$_POST['final_time']:"";
 		$year = isset($_POST['year'])?$_POST['year']:"";
 		$term = isset($_POST['term'])?$_POST['term']:"";
+		$strYear = "";
+		foreach ($year as  $value) {
+			$strYear .= $value;
+		}
+		var_dump($strYear);
+		exit();
 
 		// $pass = isset($_GET['password'])?$_GET['password']:"";
 		$this->load->model('activity');
