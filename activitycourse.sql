@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 12, 2019 at 07:03 AM
+-- Generation Time: May 12, 2019 at 08:26 AM
 -- Server version: 10.1.39-MariaDB
 -- PHP Version: 7.3.5
 
@@ -39,7 +39,8 @@ CREATE TABLE `activity` (
   `term` int(50) NOT NULL,
   `responsible` varchar(100) NOT NULL,
   `status` varchar(50) NOT NULL,
-  `details` varchar(255) NOT NULL
+  `details` varchar(255) NOT NULL,
+  `school_year` int(55) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
