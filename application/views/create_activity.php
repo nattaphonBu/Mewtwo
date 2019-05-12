@@ -33,7 +33,7 @@
       </div>
     </nav>
     <h1>สร้างกิจกรรม</h1>
-    <form method="post" action="<form action="" method="get">
+    <form action="<?php echo base_url('Welcome/insert') ?>" method="get">
 <div class="form-group">
   <label for="usr">ชื่อกิจกรรม</label>
   <input type="text" class="form-control col-5" id="nameActivity">
@@ -84,5 +84,5 @@
   <label for="responsible">ชื่อผู้รับผิดชอบ</label>
   <input type="text" class="form-control col-5" id="usr">
 </div>
-<button type="button" class="btn btn-primary btn-md col-5">บันทึก</button>
+<button type="submit" class="btn btn-primary btn-md col-5">บันทึก</button>
 </form>
